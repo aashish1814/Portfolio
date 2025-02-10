@@ -91,10 +91,6 @@ body{
     opacity: .7;
 }
 
-
-
-
-
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -110,9 +106,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url(images/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .home .home-content{
@@ -460,9 +453,6 @@ span{
 }
 
 
-
-
-
 /*BREAKPOINTS*/
 
 @media (max-width: 1200px){
@@ -507,7 +497,6 @@ span{
     .portfolio {
         padding-bottom: 7rem;
     }
-
 
     .footer {
         padding: 2rem 3%;
@@ -556,9 +545,12 @@ span{
     }
 
     .home {
+        margin-top: 50%;
         padding: 2rem 3% 23rem;
         justify-content: center;
+        align-items: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .home-content h3{
@@ -572,41 +564,16 @@ span{
     .home-content .social-media a{
         margin: 2.5rem .75rem 3rem;
     }
-
-    .about {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .about-content h2{
-        text-align: center;
-    }
-
-    .about-img img{
-        width: 70vw;
-        margin-top: -2rem;
-    }
-
-    .experiences h2,
-    .services h2,
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
-
-    .portfolio .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 617px){
-    .portfolio .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-
     .home {
+        margin-top: 50%;
         padding: 0 3% 2rem;
         justify-content: center;
+        align-items: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .home-content h3{
@@ -627,46 +594,9 @@ span{
 }
 
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-
     .home {
         padding: 6rem 3% 10rem;
         align-items: center;
-    }
-
-    .home h3{
-        padding-top: 5rem;
-    }
-
-    .experiences,
-    .services,
-    .portfolio{
-        padding: 6rem;    
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer-iconTop{
-        padding: 2rem;
-    }
-
-}
-
-@media (max-width: 365px) {
-    .about-img img{
-        width: 90vw;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
+        justify-content: center;
     }
 }
