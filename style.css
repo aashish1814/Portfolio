@@ -68,12 +68,16 @@ body{
     margin-right: 3.5rem;
 }
 
+.navbar a.active{
+    color: var(--main-color);
+}
+
 .header.sticky .navbar a{
     color: var(--text-color);
 }
 
 .header.sticky .navbar a.active{
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .navbar a.active::before{
@@ -481,8 +485,7 @@ span{
 
 @media (max-width: 991px){
 
-    .navbar a:nth-child(1),
-    .navbar a:nth-child(2){
+    .navbar a:nth-child(1){
         color: var(--main-color);
     }
 

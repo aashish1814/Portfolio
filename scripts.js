@@ -3,7 +3,7 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
+  menuIcon.classList.toggle('fa-x');
   navbar.classList.toggle('active');
 };
 
@@ -37,29 +37,14 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
 /*=====remove menu icon navbar when click scroll======*/
 
-menuIcon.classList.remove('bx-x');
+menuIcon.classList.remove('fa-x');
 navbar.classList.remove('active');
 
 
 
 };
 
-/*=====swiper======*/
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 
 
 /*=====scroll reveal======*/
