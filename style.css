@@ -528,10 +528,6 @@ span{
         display: block;
     }
 
-    .header {
-        top: 0 !important;
-    }
-
     .navbar{
         position: absolute;
         top: 100%;

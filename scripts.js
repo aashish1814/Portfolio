@@ -30,9 +30,19 @@ window.onscroll = () => {
 
 
 /*=====sticky navbar======*/
-let header = document.querySelector('.header');
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 100);
+});
 
-header.classList.toggle('sticky', window.scrollY > 100);
+// Ensure sticky class is applied correctly on page load
+window.addEventListener("load", function () {
+  let header = document.querySelector(".header");
+  if (window.scrollY > 100) {
+      header.classList.add("sticky");
+  }
+});
+
 
 
 /*=====remove menu icon navbar when click scroll======*/
