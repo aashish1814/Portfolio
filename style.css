@@ -34,7 +34,7 @@ body{
     transition: .5s ease;
 }
 
-.header {
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -44,9 +44,8 @@ body{
     display: flex;
     align-items: center;
     z-index: 100;
-    transition: all 0.5s ease-in-out;
+    transition: .5;
 }
-
 
 .header.sticky{
     background-color: var(--bg-color);
@@ -527,6 +526,10 @@ span{
 @media (max-width: 768px){
     #menu-icon{
         display: block;
+    }
+
+    .header {
+        top: 0 !important;
     }
 
     .navbar{
