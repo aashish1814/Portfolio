@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 
 
 /*=====scroll section active link======*/
-let sections =  document.querySelectorAll('section');
+let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
@@ -19,7 +19,7 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
-    if(top >= offset && top < offset + height) {
+    if (top >= offset && top < offset + height) {
       navlinks.forEach(links => {
         links.classList.remove('active');
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -29,26 +29,26 @@ window.onscroll = () => {
   });
 
 
-/*=====sticky navbar======*/
-window.addEventListener("scroll", function () {
-  let header = document.querySelector(".header");
-  header.classList.toggle("sticky", window.scrollY > 100);
-});
+  /*=====sticky navbar======*/
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector(".header");
+    header.classList.toggle("sticky", window.scrollY > 100);
+  });
 
-// Ensure sticky class is applied correctly on page load
-window.addEventListener("load", function () {
-  let header = document.querySelector(".header");
-  if (window.scrollY > 100) {
+  // Ensure sticky class is applied correctly on page load
+  window.addEventListener("load", function () {
+    let header = document.querySelector(".header");
+    if (window.scrollY > 100) {
       header.classList.add("sticky");
-  }
-});
+    }
+  });
 
 
 
-/*=====remove menu icon navbar when click scroll======*/
+  /*=====remove menu icon navbar when click scroll======*/
 
-menuIcon.classList.remove('fa-x');
-navbar.classList.remove('active');
+  menuIcon.classList.remove('fa-x');
+  navbar.classList.remove('active');
 
 
 
@@ -80,3 +80,8 @@ ScrollReveal().reveal('.home-content h1, .about-img img', {
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {
   origin: 'right'
 });
+
+
+
+
+
