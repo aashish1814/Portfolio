@@ -278,15 +278,32 @@ span {
 .experiences-box h3 {
     font-size: 2.6rem;
     transition: .5s ease;
+    padding-bottom: 15px;
+}
+
+.experiences-box h4 {
+    font-size: 2rem;
+    transition: .5s ease;
+    padding-bottom: 15px;
 }
 
 .experiences-box:hover h3 {
     color: var(--main-color);
 }
 
+.experiences-box:hover h4 {
+    color: var(--main-color);
+}
+
 .experiences-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+.experiences-box p a{
+    font-size: 1.6rem;
+    margin: 1rem 0.5rem 3rem;
+    color: var(--main-color);
 }
 
 .services h2 {
